@@ -7,11 +7,11 @@ import org.jointheleague.graphical.robot.Robot;
 public class OlympicRings_Threaded {
 
 	public static void main(String[] args) {
-		Robot blue = new Robot(400, 400);
+		Robot blue = new Robot(500, 400);
 		Robot black = new Robot(800, 400);
-		Robot red = new Robot(1200, 400);
-		Robot yellow = new Robot(600, 600);
-		Robot green = new Robot(1000, 600);
+		Robot red = new Robot(1100, 400);
+		Robot yellow = new Robot(700, 600);
+		Robot green = new Robot(950, 600);
 		new Thread(() -> {
 			for (int i = 0; i < 120; i++) {
 				blue.setSpeed(10);
