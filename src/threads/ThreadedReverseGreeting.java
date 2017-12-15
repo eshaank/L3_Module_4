@@ -12,13 +12,14 @@ public class ThreadedReverseGreeting {
 			public void run() {
 				for (int i = 1; i < 51; i++) {
 				
-					count++;
+					System.out.println(i);
+					count=i;
 					
 				thread[i] = new Thread(new Runnable() {
 						
 						@Override
 						public void run() {
-						System.out.println("Hello from Thread " + count);	
+						System.out.println("Hello from Thread " + );	
 							
 						}
 					});
