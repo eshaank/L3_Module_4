@@ -4,22 +4,22 @@ public class ThreadedReverseGreeting {
   //Thread 2 creates Thread 3; and so on, up to Thread 50. 
   //Each thread should print "Hello from Thread <num>!", 
   //but you should structure your program such that the threads print their greetings in reverse order.
-	int count = 0;
-	public static void main(String[] args) {
+	
+	public  void main(String[] args) {
 		Thread[] thread = new Thread[50];
 		
 		thread[0] = new Thread(new  Runnable() {
 			public void run() {
 				for (int i = 1; i < 51; i++) {
 				
-					System.out.println(i);
-					count=i;
+					
+					
 					
 				thread[i] = new Thread(new Runnable() {
 						
 						@Override
 						public void run() {
-						System.out.println("Hello from Thread " + );	
+						
 							
 						}
 					});
